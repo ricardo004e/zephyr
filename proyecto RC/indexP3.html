@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de Exponentes</title>
+    <link rel="icon" href="zephyr.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="styleP3.css">
+</head>
+<body>
+    <header>
+        <h1>Leyes de Exponentes</h1>
+        <p>Descubre el poder de los exponentes con ejemplos claros y explicaciones detalladas</p>
+    </header>
+    <main>
+        <section id="leyes">
+            <div class="ley">
+                <h3>1. Producto de potencias con la misma base</h3>
+                <p><strong>Fórmula:</strong> \(a^m \times a^n = a^{m+n}\)</p>
+                <p><strong>Ejemplo:</strong> \(2^3 \times 2^4 = 2^{3+4} = 2^7 = 128\)</p>
+            </div>
+            <div class="ley">
+                <h3>2. Cociente de potencias con la misma base</h3>
+                <p><strong>Fórmula:</strong> \(\frac{a^m}{a^n} = a^{m-n}\)</p>
+                <p><strong>Ejemplo:</strong> \(\frac{5^6}{5^2} = 5^{6-2} = 5^4 = 625\)</p>
+            </div>
+            <div class="ley">
+                <h3>3. Potencia de una potencia</h3>
+                <p><strong>Fórmula:</strong> \((a^m)^n = a^{m \cdot n}\)</p>
+                <p><strong>Ejemplo:</strong> \((3^2)^3 = 3^{2 \cdot 3} = 3^6 = 729\)</p>
+            </div>
+            <div class="ley">
+                <h3>4. Producto de potencias con el mismo exponente</h3>
+                <p><strong>Fórmula:</strong> \((a \times b)^m = a^m \times b^m\)</p>
+                <p><strong>Ejemplo:</strong> \((2 \times 3)^4 = 2^4 \times 3^4 = 16 \times 81 = 1296\)</p>
+            </div>
+            <div class="ley">
+                <h3>5. Cociente de potencias con el mismo exponente</h3>
+                <p><strong>Fórmula:</strong> \(\left(\frac{a}{b}\right)^m = \frac{a^m}{b^m}\)</p>
+                <p><strong>Ejemplo:</strong> \(\left(\frac{4}{2}\right)^3 = \frac{4^3}{2^3} = \frac{64}{8} = 8\)</p>
+            </div>
+            <div class="ley">
+                <h3>6. Exponente cero</h3>
+                <p><strong>Fórmula:</strong> \(a^0 = 1\) (para \(a \neq 0\))</p>
+                <p><strong>Ejemplo:</strong> \(7^0 = 1\)</p>
+            </div>
+            <div class="ley">
+                <h3>7. Exponente negativo</h3>
+                <p><strong>Fórmula:</strong> \(a^{-n} = \frac{1}{a^n}\)</p>
+                <p><strong>Ejemplo:</strong> \(2^{-3} = \frac{1}{2^3} = \frac{1}{8}\)</p>
+            </div>
+        </section>
+        <section id="interactive">
+            <h2>Experimenta con los Exponentes</h2>
+            <p>Introduce tus propios valores y verifica los resultados de las leyes de exponentes.</p>
+            <div>
+                <label for="base">Base (a):</label>
+                <input type="number" id="base" placeholder="Ingresa la base">
+            </div>
+            <div>
+                <label for="exponente1">Exponente 1 (m):</label>
+                <input type="number" id="exponente1" placeholder="Ingresa el primer exponente">
+            </div>
+            <div>
+                <label for="exponente2">Exponente 2 (n):</label>
+                <input type="number" id="exponente2" placeholder="Ingresa el segundo exponente">
+            </div>
+            <button onclick="calcular()">¡Calcular!</button>
+            <div id="resultados"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 zephyr tech innovations. Todos los derechos reservados.</p>
+    </footer>
+  <script src="indexP3.js"></script>
+</body>
+</html>

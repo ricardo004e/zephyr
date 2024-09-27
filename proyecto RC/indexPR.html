@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="zephyr.ico">
+    <title>Redes Neuronales</title>
+    <style>
+        :root {
+            --bg-gradient-start: #375a97;
+            --bg-gradient-end: #4d1a91;
+            --text-color: #ffffff;
+            --accent-color: #64ffda;
+            --secondary-color: #ff4081;
+            --card-bg-color: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, var(--bg-gradient-start), var(--bg-gradient-end));
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-grow: 1;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            color: var(--accent-color);
+            margin: 0;
+        }
+        h2 {
+            color: var(--accent-color);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        #neuralNetworkCanvas {
+            width: 100%;
+            height: 300px;
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Redes Neuronales: El Futuro de la IA</h1>
+        </header>
+        <section>
+            <h2>¿Qué son las Redes Neuronales?</h2>
+            <p>Las redes neuronales son modelos computacionales inspirados en el funcionamiento del cerebro humano. Están compuestas por unidades interconectadas llamadas "neuronas artificiales" que procesan y transmiten información.</p>
+        </section>
+        <div class="grid">
+            <div class="card">
+                <h3>Componentes Clave</h3>
+                <ul>
+                    <li>Neuronas de entrada</li>
+                    <li>Capas ocultas</li>
+                    <li>Neuronas de salida</li>
+                    <li>Pesos y sesgos</li>
+                    <li>Funciones de activación</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Tipos de Redes Neuronales</h3>
+                <ul>
+                    <li>Perceptrón Multicapa (MLP)</li>
+                    <li>Redes Neuronales Convolucionales (CNN)</li>
+                    <li>Redes Neuronales Recurrentes (RNN)</li>
+                    <li>Redes Generativas Adversarias (GAN)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Aplicaciones</h3>
+                <ul>
+                    <li>Reconocimiento de imágenes</li>
+                    <li>Procesamiento de lenguaje natural</li>
+                    <li>Predicción de series temporales</li>
+                    <li>Sistemas de recomendación</li>
+                    <li>Conducción autónoma</li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <h2>Visualización de una Red Neuronal</h2>
+            <canvas id="neuralNetworkCanvas"></canvas>
+        </section>
+    </div>
+    <script>
+        const canvas = document.getElementById('neuralNetworkCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
+        }
+
+        function drawNeuron(x, y, radius) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(100, 255, 218, 0.7)';
+            ctx.fill();
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.stroke();
+        }
+
+        function drawConnection(x1, y1, x2, y2) {
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.strokeStyle = 'rgba(255, 64, 129, 0.4)';
+            ctx.stroke();
+        }
+
+        function drawNetwork() {
+            resizeCanvas();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const layers = [4, 6, 6, 4];
+            const neuronRadius = 10;
+            const layerSpacing = canvas.width / (layers.length + 1);
+
+            layers.forEach((neurons, layerIndex) => {
+                const x = layerSpacing * (layerIndex + 1);
+                const spacing = canvas.height / (neurons + 1);
+
+                for (let i = 0; i < neurons; i++) {
+                    const y = spacing * (i + 1);
+                    drawNeuron(x, y, neuronRadius);
+
+                    if (layerIndex < layers.length - 1) {
+                        const nextLayer = layers[layerIndex + 1];
+                        const nextSpacing = canvas.height / (nextLayer + 1);
+                        for (let j = 0; j < nextLayer; j++) {
+                            const nextY = nextSpacing * (j + 1);
+                            drawConnection(x, y, x + layerSpacing, nextY);
+                        }
+                    }
+                }
+            });
+        }
+
+        window.addEventListener('load', drawNetwork);
+        window.addEventListener('resize', drawNetwork);
+    </script>
+</body>
+</html>

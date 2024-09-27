@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="StyleM6.css"/>
+    <link rel="icon" href="zephyr.jpg">
+    <meta name="description" content="Mercado en línea con los mejores productos de tecnología">
+    <meta name="keywords" content="Mercado, Tecnología, Xiaomi, Productos">
+</head>
+<body>
+    <header>
+        <div class="menu container">
+            <a href="#" class="logo" style="background: red;">
+                <li><a href="index1.html">Zephyr</a></li>
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="WhatsApp Image 2024-07-20 at 7.31.16 PM.jpeg" class="menu-icono" alt="Icono del menú">
+            </label>
+               
+            <button data-quantity="0" class="btn-cart">
+                <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+                  <title>icon-cart</title>
+                  <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+                </svg>
+                <span class="quantity">0</span>
+              </button>
+
+              <div id="cart-items">
+                <h3>Carrito de Compras</h3>
+                <ul id="cart-item-list"></ul>   
+                <div class="total">Total: $0.00 MXN</div>
+                <button class="buy-all"  style="background: #8f1fcf; border-radius: 11px; color: rgb(0, 0, 0); border: none; padding: 5px;">Comprar Todo</button>
+                <button id="close-cart" class="buy-all" style="background: #686464; border-radius: 11px; color: rgb(0, 0, 0); border: none; padding: 5px;">Cerrar</button>
+            </div>
+            
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index1.html">Inicio</a></li>
+                    <li><a href="indexN8.html">Nosotros</a></li>
+                    <li><a href="indexM6.html">Productos</a></li>
+                    <li><a href="indexCO7.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="slider" src="WhatsApp Image 2024-07-20 at 1.31.12 PM.jpeg" alt="Imagen del producto 1" width="415" height="500">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider" src="WhatsApp Image 2024-07-20 at 1.31.12 PM (1).jpeg" alt="Imagen del producto 2" width="415" height="500">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="slider" src="WhatsApp Image 2024-07-20 at 1.31.12 PM (2).jpeg" alt="Imagen del producto 3" width="415" height="500">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <a href="#" class="enlace">Para Más Información</a>
+        </div>
+    </header>
+
+    <section class="bee">
+        <div class="swiper mySwiper-2 container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="WhatsApp Image 2024-07-20 at 2.07.50 PM.jpeg" alt="Producto Xiaomi 1" width="200" height="230">
+                        <div class="product-txt">
+                            <h4>Xiaomi</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$12,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="WhatsApp Image 2024-07-20 at 2.25.39 PM (1).jpeg" alt="Producto Xiaomi 2" width="180" height="300">
+                        <div class="product-txt">
+                            <h4>Xiaomi</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$8,000.00 MXN</span>
+                        </div>
+
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="WhatsApp Image 2024-07-20 at 2.25.39 PM (2).jpeg" alt="Producto Xiaomi 3" width="200" height="230">
+                        <div class="product-txt">
+                            <h4>Xiaomi</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$4,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="WhatsApp Image 2024-07-20 at 2.25.39 PM (3).jpeg" alt="Producto Xiaomi 4" width="200" height="230">
+                        <div class="product-txt">
+                            <h4>Xiaomi</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$6,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="WhatsApp Image 2024-07-20 at 2.25.39 PM.jpeg" alt="Producto Xiaomi 5" width="200" height="230">
+                        <div class="product-txt">
+                            <h4>Xiaomi</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$3,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="nosotros">
+        <div class="nosotros-txt container">
+            <h2>Nosotros</h2>
+            <p>Los Mejores En <br><span>Tecnología</span></p>
+        </div>
+
+        <div class="info container">
+             <a href="#" class="enlace">Para Más Información</a>
+        </div>
+    </section>
+
+    <section class="bee">
+        <div class="swiper mySwiper-2 container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="apple1.jpg" alt="Producto Apple 1" width="300" height="230">
+                        <div class="product-txt">
+                            <h4>Apple</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$12,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="apple2.jpg" alt="Producto Apple 2" width="300" height="230">
+                        <div class="product-txt">
+                            <h4>Apple</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$8,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="apple3.webp" alt="Producto Apple 3" width="300" height="230">
+                        <div class="product-txt">
+                            <h4>Apple</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$4,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="apple4.png" alt="Producto Apple 4" width="300" height="230">
+                        <div class="product-txt">
+                            <h4>Apple</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$6,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="apple5.jpg" alt="Producto Apple 5" width="300" height="200">
+                        <div class="product-txt">
+                            <h4>Apple</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$3,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="bee">
+        <div class="swiper mySwiper-2 container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="tablet1.jpg" alt="Producto Xiaomi 1" width="250" height="230">
+                        <div class="product-txt">
+                            <h4>Samsung </h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$12,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="tablet2.jpg" alt="Producto Xiaomi 2" width="250" height="300">
+                        <div class="product-txt">
+                            <h4>Samsung</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$8,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="tablet3.jpg" alt="Producto Xiaomi 3" width="250" height="230">
+                        <div class="product-txt">
+                            <h4>Samsung</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$9,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="tablet4.jpg" alt="Producto Xiaomi 4" width="250" height="230">
+                        <div class="product-txt">
+                            <h4>Samsung</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$6,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="tablet5.jpg" alt="Producto Xiaomi 5" width="285" height="230">
+                        <div class="product-txt">
+                            <h4>Samsung</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$10,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="apple5.jpg" alt="Producto Xiaomi 5" width="285" height="230">
+                        <div class="product-txt">
+                            <h4>Samsung</h4>
+                            <p>Calidad Precio</p>
+                            <span class="price">$32,000.00 MXN</span>
+                        </div>
+                        <button class="CartBtn">
+                            <span class="IconContainer"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            </span>
+                            <p class="text">Añadir Al Carrito</p>
+                          </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <hr>
+        <div class="footer-txt">
+            <img src="zephyr.jpg" alt="Logo de la empresa" width="200" height="200">
+            <div class="links">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="https://wa.me/qr/P6RRWR3O43YXB1">Contacto</a></li>
+                </ul>
+                <div class="socials">
+                    <img src="face.png" alt="Icono de Facebook" width="50" height="50">
+                    <img src="ig.png" alt="Icono de Instagram" width="50" height="50">
+                    <img src="whats.png" alt="Icono de WhatsApp" width="50" height="50">
+                </div>
+                <p>@Ricardo</p>   
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <footer>
+        <p>&copy; 2024 zephyr tech inovations. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        var swiper1 = new Swiper('.mySwiper-1', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        var swiper2 = new Swiper('.mySwiper-2', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script src="IndexM6.js"></script>
+</body>
+</html>

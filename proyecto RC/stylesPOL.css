@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right, #375a97, #4d1a91);
+    padding: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    color: #ffd700;
+}
+ul {
+    padding-left: 20px;
+}
+a {
+    color: #ffd700;
+}
